@@ -1,0 +1,46 @@
+/*
+ * -------------------------------------------------------------
+ * OXIDE system type defines
+ * Copyright (c) 2025, Ian Moffett and the OXIDE SYSTEMS engineers
+ * All rights reserved.
+ * Provided under the BSD 3-Clause license.
+ * -------------------------------------------------------------
+ */
+
+#ifndef _SYS_TYPES_H_
+#define _SYS_TYPES_H_ 1
+
+/* Internal unsigned types */
+typedef unsigned char       __uint8_t;
+typedef unsigned short      __uint16_t;
+typedef unsigned long       __uint32_t;
+typedef unsigned long long  __uint64_t;
+typedef __uint64_t          __size_t;
+typedef __size_t            __uintptr_t;
+typedef __size_t            __off_t;
+
+/* Internal signed types */
+typedef char        __int8_t;
+typedef short       __int16_t;
+typedef long        __int32_t;
+typedef long long   __int64_t;
+typedef __int64_t   __ssize_t;
+typedef __size_t    __ptrdiff_t;
+
+#if defined(_OXIDE_SOURCE) || defined(_HIVE)
+typedef __uint8_t  uint8_t;
+typedef __uint16_t uint16_t;
+typedef __uint32_t uint32_t;
+typedef __uint64_t uint64_t;
+typedef __uintptr_t uintptr_t;
+typedef __off_t     off_t;
+
+typedef __int8_t    int8_t;
+typedef __int16_t   int16_t;
+typedef __int32_t   int32_t;
+typedef __int64_t   int64_t;
+typedef __ssize_t   ssize_t;
+typedef __ptrdiff_t ptrdiff_t;
+#endif  /* _OXIDE_SOURCE || HIVE */
+
+#endif  /* !_SYS_TYPES_H_ */
