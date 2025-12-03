@@ -28,6 +28,8 @@ typedef __int64_t   __ssize_t;
 typedef __size_t    __ptrdiff_t;
 
 #if defined(_OXIDE_SOURCE) || defined(_HIVE)
+#define NULL ((void *)0)
+
 typedef __uint8_t  uint8_t;
 typedef __uint16_t uint16_t;
 typedef __uint32_t uint32_t;
