@@ -36,6 +36,7 @@ typedef __uint32_t uint32_t;
 typedef __uint64_t uint64_t;
 typedef __uintptr_t uintptr_t;
 typedef __off_t     off_t;
+typedef __size_t    size_t;
 
 typedef __int8_t    int8_t;
 typedef __int16_t   int16_t;
