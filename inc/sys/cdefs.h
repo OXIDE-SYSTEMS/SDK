@@ -12,6 +12,8 @@
 
 #define ASMV            __asm__ __volatile__
 #define ATTR(x)         __attribute__((x))
+#define LIKELY(exp)     __builtin_expect(((exp) != 0), 1)
+#define UNLIKELY(exp)   __builtin_expect(((exp) != 0), 0)
 #define PACKED          ATTR(packed)
 #define NORETURN        ATTR(noreturn)
 #define ALIGN(n)        ATTR(aligned(n))
